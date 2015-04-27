@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!-- This is Base lay out def all tiles def extend this def -->
+    <definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+        <put-attribute name="title" value=""/>
+        
+        <put-attribute name="body" value=""/>
+       
+    </definition>
+    
+     <definition name="home.definition" template="/WEB-INF/jsp/baselout.jsp">
+        <put-attribute name="title" value=""/>
+              
+        <put-attribute name="body" value=""/>
+       
+    </definition>
+   
+    <!-- Class Module -->
+     <definition name="getAllcls" extends="base.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/getAllcls.jsp"/>
+    </definition>
+ 
+ 
+  <!-- End OF CLASS MODULE -->
+  
+  <!-- STUDENT MASTER MODULE -->
+ 
+  <definition name="cust" extends="base.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/cust.jsp"/>
+    </definition>
+    
+     <!-- PRODUCT -->
+    <definition name="product" extends="base.definition">
+        <put-attribute name="title" value="index"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/producMp.jsp"/>
+    </definition>
+   
+  <definition name="addproduct" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/addproduct.jsp" />
+    </definition>
+    
+    <definition name="editp" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/editp.jsp" />
+    </definition>
+  <!-- END OF PRODUCT -->
+   <!-- BARCODE -->
+  
+  <definition name="bargen" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/bargen.jsp" />
+    </definition>
+  
+  <!-- BASIC INDEX DEF -->
+  <definition name="index" extends="base.definition">
+        <put-attribute name="title" value="index"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/index.jsp"/>
+    </definition>
+ <!-- END OF INDEX-->
+ 
+ 
+    
+
+  
+ 
+ <definition name="newT" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/newT.jsp" />
+    </definition>
+    
+    <definition name="listView" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/listView.jsp" />
+    </definition>
+ 
+</tiles-definitions>

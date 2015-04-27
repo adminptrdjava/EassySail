@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 Apr, 2015 7:30:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.com.pojo.LotTable" table="lot_table" catalog="bsale" optimistic-lock="version">
+        <id name="lid" type="java.lang.Integer">
+            <column name="Lid" />
+            <generator class="identity" />
+        </id>
+        <property name="date" type="date">
+            <column name="Date" length="10" />
+        </property>
+        <property name="pid" type="java.lang.Integer">
+            <column name="Pid" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="Quantity" />
+        </property>
+    </class>
+</hibernate-mapping>

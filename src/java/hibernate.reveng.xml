@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="bsale"/>
+  <table-filter match-name="usertab"/>
+  <table-filter match-name="barcode_table"/>
+  <table-filter match-name="invoice"/>
+  <table-filter match-name="stockout"/>
+  <table-filter match-name="ctype"/>
+  <table-filter match-name="lot_table"/>
+  <table-filter match-name="category"/>
+  <table-filter match-name="stockin"/>
+  <table-filter match-name="product_table"/>
+</hibernate-reverse-engineering>

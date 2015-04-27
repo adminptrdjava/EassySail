@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 Apr, 2015 7:30:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.com.pojo.Stockout" table="stockout" catalog="bsale" optimistic-lock="version">
+        <id name="stoid" type="java.lang.Integer">
+            <column name="Stoid" />
+            <generator class="identity" />
+        </id>
+        <property name="lid" type="string">
+            <column name="Lid" length="10" />
+        </property>
+        <property name="bno" type="java.lang.Integer">
+            <column name="Bno" />
+        </property>
+        <property name="pid" type="int">
+            <column name="Pid" not-null="true" />
+        </property>
+        <property name="invno" type="int">
+            <column name="Invno" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="Date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

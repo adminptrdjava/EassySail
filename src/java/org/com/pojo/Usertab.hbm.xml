@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 Apr, 2015 7:30:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.com.pojo.Usertab" table="usertab" catalog="bsale" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="uid" type="string">
+            <column name="uid" length="20" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="pass" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" />
+        </property>
+        <property name="ps" type="string">
+            <column name="ps" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

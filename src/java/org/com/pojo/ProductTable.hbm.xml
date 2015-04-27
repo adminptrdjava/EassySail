@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 Apr, 2015 7:30:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.com.pojo.ProductTable" table="product_table" catalog="bsale" optimistic-lock="version">
+        <id name="pid" type="java.lang.Integer">
+            <column name="Pid" />
+            <generator class="identity" />
+        </id>
+        <property name="pname" type="string">
+            <column name="Pname" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="category" type="string">
+            <column name="Category" length="50" not-null="true" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" length="100" />
+        </property>
+        <property name="publisher" type="string">
+            <column name="publisher" length="100" />
+        </property>
+        <property name="quantity" type="string">
+            <column name="Quantity" length="50" />
+        </property>
+        <property name="pprice" type="big_decimal">
+            <column name="PPrice" precision="50" not-null="true" />
+        </property>
+        <property name="sprice" type="big_decimal">
+            <column name="SPrice" precision="50" />
+        </property>
+        <property name="rackno" type="int">
+            <column name="Rackno" not-null="true" />
+        </property>
+        <property name="isbn" type="string">
+            <column name="isbn" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
